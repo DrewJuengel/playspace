@@ -1,3 +1,16 @@
-body {
-    padding: 80px
+/*body {
+    padding: 100px;
+}*/
+
+#homeButton:hover {
+    background-color: #343cd3;
+    color: white;
+}
+
+#logoutButton {
+    float: right;
+}
+
+#logoutButton:hover {
+    background-color: #ad1d1d
 }

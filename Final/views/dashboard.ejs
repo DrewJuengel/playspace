@@ -13,11 +13,10 @@
     </head>
     <body ng-controller="dashboard as dCtrl" class="container">
         <div class="jumbotron">
-            <h1>Welcome to your dashboard!</h1>
-            <p>One day this page will be filled with imagination...</p>
+            <a href="/" class="btn btn-lg btn-default" id="homeButton">Homepage</a>
+            <a href="/logout" class="btn btn-lg btn-danger" id="logoutButton">Logout</a>
+            <h1>Welcome</h1>
             <p>Mongo UserID: <%= uid %></p>
-            <a href="/" class="btn btn-lg btn-default">Homepage</a>
-            <a href="/logout" class="btn btn-lg btn-danger">Logout</a>
         </div>
     </body>
 </html>

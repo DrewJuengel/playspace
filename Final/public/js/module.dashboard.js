@@ -2,15 +2,17 @@ angular.module('module.dashboard', ['ngRoute'])
     .controller('DashboardController', dashboard)
     .factory('artificialFactory', aiFactory);
 
-dashboard.$inject=['aiFactory'];
+dashboard.$inject=['$scope', 'aiFactory'];
 aiFactory.$inject=['$http'];
 
-function dashboard() {
-    console.log('Dashboard initialized');
+function dashboard($scope, aiFactory) {
+    console.info('Dashboard initialized');
     var dCtrl = this;
 }
 
 function aiFactory($http){
-
+    console.log('Factory is running..')
     var factoryObj = {}
+
+    return factoryObj;
 }
