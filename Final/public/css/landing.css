@@ -1,4 +1,28 @@
+html {
+    background-color: #e0e0e0
+}
 body {
-    margin-top: 40px;
-    background-color: #fefefe;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#navButtonHome {
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#navButtonProfile {
+    margin-right: 20px;
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#mainLoginButton {
+    background-color: #0061ff;
+}
+
+#mainLoginButton:hover {
+    background-color: #0044b2;
 }

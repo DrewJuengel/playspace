@@ -1,16 +1,26 @@
-/*body {
-    padding: 100px;
-}*/
-
-#homeButton:hover {
-    background-color: #343cd3;
-    color: white;
+html {
+    background-color: #e0e0e0
+}
+body {
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
-#logoutButton {
-    float: right;
+#navButtonHome {
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
 }
 
-#logoutButton:hover {
-    background-color: #ad1d1d
+#navButtonProfile {
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
 }
+
+#navButtonLogout {
+    font-size: 20px;
+    width: 140px;
+    text-align: center;
+}
+

@@ -2,28 +2,47 @@
 <html>
     <head>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+        <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
         <link rel="stylesheet" href="/css/landing.css">
     </head>
     <body>
-        <section id="wrapper" class="container">
-            <header>
-                <nav class="navbar navbar-default">
-                    <ul class="nav navbar-nav">
-                        <li role="presentation" class="active"><a href="#home">Home</a></li>
-                        <li id="profile-button" role="presentation"><a href="#profile">Profile</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="jumbotron">
-                <h1>You landed!</h1>
-                <p>Learn about all the things!</p>
-                <p>
-                    <a class="btn btn-primary btn-lg" href="/login" role="button">Login Now!</a>
-                </p>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="/" class="brand-logo center"></a>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                            <li>
+                                <a href="#"  class="waves-effect waves-light" id="navButtonHome">Home</a>
+                            </li>
+                            <li>
+                                <a href="#profile" class="waves-effect waves-light" id="navButtonProfile">Profile</a>
+                            </li>
+                        </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card white darken-1">
+                    <div class="card-content black-text">
+                    <span class="card-title">Card Title</span>
+                        <section id="wrapper" class="container">
+                            <div>
+                                <h1>You landed!</h1>
+                                <p>Learn about all the things!</p>
+                                <p>
+                                    <a class="waves-effect waves-light btn-large" href="/login" role="button" id="mainLoginButton">Login Now!</a>
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+
         <footer class="text-center">&copy; <%= new Date().getFullYear() %></footer>
     </body>
 </html>
