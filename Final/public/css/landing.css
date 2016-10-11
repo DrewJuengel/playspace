@@ -19,6 +19,12 @@ body {
     font-size: 20px;
 }
 
+#navButtonLogin {
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
+}
+
 #mainLoginButton {
     background-color: #0061ff;
 }
