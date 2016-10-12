@@ -1,6 +1,7 @@
 'use strict'
 
-var Auth = require('./auth');
+var Auth = require('./controllers/auth'),
+    API = require('./controllers/api');
 
 module.exports = function(app) {
     // SITE ROOT
@@ -18,4 +19,7 @@ module.exports = function(app) {
     app.get('/dashboard', (req, res) => { // renders the dashboard, break this out into another controller if needed!
         res.render('dashboard', req.session)
     });
+
+    // API
+    app.get('/api/ai/text', API.text);
 }

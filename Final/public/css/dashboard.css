@@ -6,13 +6,11 @@ body {
     margin-right: 150px;
 }
 
-#navButtonHome {
-    width: 140px;
-    text-align: center;
-    font-size: 20px;
+.nav-wrapper {
+    background-color: #2c7de8;
 }
 
-#navButtonProfile {
+#navButtonHome {
     width: 140px;
     text-align: center;
     font-size: 20px;

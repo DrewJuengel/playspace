@@ -19,7 +19,7 @@
         </p>
 
 <!-- Nav tabs -->
-    <div class="row">
+    <div class="row" id="authCard">
         <div class="col s12 m5">
             <div class="card-panel white">
                 <div class="row">
@@ -32,26 +32,20 @@
 
             <!--Login view-->
                 <div id="test1" class="col s12">
-                    <div id="login" role="tabpanel" class="tab-pane active">
+                    <div id="login" role="tabpanel" class="tab-pane">
                         <form ng-submit="auth.login.submit($event)">
                             <h1>Login</h1>
-                                <fieldset class="form-group">
-                                    <label class="sr-only" for="email">Email</label>
-                                    <div class="input-group">
-                                        <div class="input-group-addon"></div>
-                                        <input required placeholder="Email" class="form-control" type="text" ng-model="auth.payload.email"/>
+                                    <div class="input-field">
+                                        <input id="email" type="text" ng-model="auth.payload.email"/>
+                                        <label for="email">Email</label>
                                     </div>
-                                </fieldset>
 
-                                <fieldset class="form-group">
-                                    <label class="sr-only" for="password">Password</label>
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-                                        <input required placeholder="Password" class="form-control" type="password" ng-model="auth.payload.password"/>
+                                    <div class="input-field">
+                                        <input id="password" type="password" ng-model="auth.payload.password"/>
+                                        <label for="password">Password</label>
                                     </div>
-                                </fieldset>
 
-                                <input class="btn btn-primary" type="submit" value="Login">
+                                <input type="submit" value="Login" class="waves-effect waves-light btn">
                                 <p ng-class="auth.login.alert">{{ auth.login.message }}</p>
                             </form>
                     </div>
@@ -61,31 +55,22 @@
                 <div id="test2" class="col s12">
                     <div id="register" role="tabpanel" class="tab-pane">
                             <form ng-submit="auth.register.submit($event)">
-                                <h1 class="text-center">Register</h1>
+                                <h1>Register</h1>
 
-                                    <fieldset class="form-group">
-                                        <label class="sr-only" for="name">Name</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-                                            <input required placeholder="Name" class="form-control" type="text" ng-model="auth.payload.name"/>
+                                        <div class="input-field">
+                                            <input id="name" type="text" ng-model="auth.payload.name"/>
+                                            <label for="name">Name</label>
                                         </div>
-                                    </fieldset>
 
-                                    <fieldset class="form-group">
-                                        <label class="sr-only" for="email">Email</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon"></div>
-                                            <input required placeholder="Email" class="form-control" type="text" ng-model="auth.payload.email"/>
+                                        <div class="input-field">
+                                            <input id="email" type="text" ng-model="auth.payload.email"/>
+                                            <label for="email">Email</label>
                                         </div>
-                                    </fieldset>
 
-                                    <fieldset class="form-group">
-                                        <label class="sr-only" for="password">Password</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-                                            <input required placeholder="Create a password" class="form-control" type="password" ng-model="auth.payload.password"/>
+                                        <div class="input-field">
+                                            <input id="password" type="password" ng-model="auth.payload.password"/>
+                                            <label for="password">Password</label>
                                         </div>
-                                    </fieldset>
 
                                 <button class="btn btn-primary" type="submit">Register</button>
                                 <p ng-class="auth.register.alert">{{ auth.register.message }}</p>

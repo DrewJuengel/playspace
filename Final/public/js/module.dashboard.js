@@ -13,8 +13,6 @@ function dashboard($scope, artificialFactory) {
 function aiFactory($http){
     console.log('Factory is running..')
     var factoryObj = {}
-
-        
-
+                
     return factoryObj;
 }
