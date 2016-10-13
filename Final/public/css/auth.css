@@ -7,9 +7,20 @@ body {
     margin-left: 150px;
 }
 
-.mainHomeButton {
+#mainHomeButton {
+    background-color: #2aba1a;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#mainHomeButton:hover {
+    background-color: #219b14
+}
+
+#authCard2 {
+    float: none;
+    margin: 0 auto;
 }
 
 .alert {

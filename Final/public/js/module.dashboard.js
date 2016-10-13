@@ -21,7 +21,7 @@ function dashboard($scope, artificialFactory, $http, $timeout) {
                 var thenum = parseInt(thenum);
                 var milli = thenum * 1000 * 60;
                 $timeout(function() {
-                    alert('Times Up!')
+                    alert('Times Up, Drew!')
                     console.log('timer')
                 }, milli)
 
@@ -34,7 +34,7 @@ function dashboard($scope, artificialFactory, $http, $timeout) {
                 var thenum = parseInt(thenum);
                 var milli = thenum * 1000;
                 $timeout(function() {
-                    alert('Times up!')
+                    alert('Times up, Drew!')
                     console.log('timer')
                 }, milli)
 

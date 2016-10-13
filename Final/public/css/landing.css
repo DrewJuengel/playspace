@@ -29,6 +29,26 @@ body {
     font-size: 20px;
 }
 
+img {
+    width: 250px;
+    text-align: center;
+}
+
+.card .card-content .card-title {
+    font-size: 75px;
+    text-align: center;
+}
+
+#homeCard {
+    float: none;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.row .col.m6 {
+    text-align: center;
+}
+
 #mainLoginButton {
     background-color: #2aba1a;
 }
