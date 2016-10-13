@@ -52,8 +52,8 @@
                             </ul>
                             </div>
                             <div id="test1" class="col s12">
-                                <form ng-submit="">
-                                    <input type="text" placeholder="What would you like to do?" ng-model="">
+                                <form ng-submit="dCtrl.sendCommand()">
+                                    <input type="text" placeholder="What would you like to do?" ng-model="dCtrl.command">
                                     <button type="sumbit">Submit</button>
                                 </form>
                             </div>

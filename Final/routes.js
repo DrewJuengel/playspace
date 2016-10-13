@@ -21,5 +21,9 @@ module.exports = function(app) {
     });
 
     // API
-    app.get('/api/ai/text', API.text);
+    app.get('/api/ai/:command', API.text);
+
+    app.post('/newCommand', function(req, res) {
+        console.log('hello', req.body)
+    })
 }
